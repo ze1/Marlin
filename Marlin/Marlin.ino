@@ -7,7 +7,14 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version 3 of the License, orraus (https://github.com/olikraus/U8glib_Arduino)
+  #else
+    #include <LiquidCrystal.h> // library for character LCD
+  #endif
+#endif
+
+#if HAS_DIGIPOTSS
+  #include <SPI.h>
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -42,14 +49,7 @@
     #include <LCD.h>
     #include <LiquidCrystal_I2C.h>
   #elif ENABLED(DOGLCD)
-    #include <U8glib.h> // library for graphics LCD by Oli Kraus (https://github.com/olikraus/U8glib_Arduino)
-  #else
-    #include <LiquidCrystal.h> // library for character LCD
-  #endif
-#endif
-
-#if HAS_DIGIPOTSS
-  #include <SPI.h>
+    #include <U8glib.h> // library for graphics LCD by Oli K
 #endif
 
 #if ENABLED(DIGIPOT_I2C)

@@ -3631,6 +3631,7 @@ void kill_screen(const char* lcd_msg) {
       MENU_ITEM_EDIT(float3, MSG_ADVANCE_K, &planner.extruder_advance_k, 0, 999);
     #endif
 
+   #if DISABLED(NO_VOLUMETRICS)
     MENU_ITEM_EDIT_CALLBACK(bool, MSG_VOLUMETRIC_ENABLED, &parser.volumetric_enabled, planner.calculate_volumetric_multipliers);
 
     if (parser.volumetric_enabled) {
@@ -3651,6 +3652,7 @@ void kill_screen(const char* lcd_msg) {
         #endif // EXTRUDERS > 2
       #endif // EXTRUDERS > 1
     }
+   #endif
 
     END_MENU();
   }
