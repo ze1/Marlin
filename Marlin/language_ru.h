@@ -33,11 +33,11 @@
 #define MAPPER_D0D1                // For Cyrillic
 #define DISPLAY_CHARSET_ISO10646_5
 
-#define WELCOME_MSG                         MACHINE_NAME _UxGT("Anet A6 готов к работе!")
+#define WELCOME_MSG                         MACHINE_NAME _UxGT("Готов к работе!")
 #define MSG_BACK                            _UxGT("НАЗАД")
-#define MSG_SD_INSERTED                     _UxGT("Карта обнаружена")
-#define MSG_SD_REMOVED                      _UxGT("Карта извлечена")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Концевики")
+#define MSG_SD_INSERTED                     _UxGT("Вставлена карта памяти")
+#define MSG_SD_REMOVED                      _UxGT("Карта памяти извлечена")
+#define MSG_LCD_ENDSTOPS                    _UxGT("Концевые датчики")
 #define MSG_MAIN                            _UxGT("ГЛАВНОЕ МЕНЮ")
 #define MSG_AUTOSTART                       _UxGT("Автозапуск")
 #define MSG_DISABLE_STEPPERS                _UxGT("Отключить моторы")
